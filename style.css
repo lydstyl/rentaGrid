@@ -1,4 +1,44 @@
+h1{
+    background-color: #504CAF;
+    color: white; 
+}
+p{
+    color: #AF504C;
+}
+.input{
+    margin: 8px;
+}
+select, input{
+    width: 170px;
+}
 #grid label{
     display: inline-block;
     width: 200px;
+}
+button{
+    margin: 16px 0;
+}
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    width: 100%;
+    margin: 16px 0;
+    border-collapse: collapse;
+    text-align: right;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #504CAF;
+}
+th{
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+}
+th, td{
+    padding: 8px;
+    max-width: 78px;
 }

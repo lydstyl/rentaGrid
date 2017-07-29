@@ -3,7 +3,8 @@
 	<head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-        <title>Profitability grid</title>
+		<title>Profitability grid</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 	<body>
 		<div id="grid">
@@ -11,23 +12,28 @@
 			<p>Create your own grid! It will help you to find your good.</p>
 			<div class="input">
 				<label for="whatDoYouWant">whatDoYouWant</label>
-				<input id ="whatDoYouWant" type="text" placeholder="eg. : costToRent" value="costToRent">
+				<!-- <input id ="whatDoYouWant" type="text" placeholder="eg. : costToRent" value="costToRent"> -->
+				<select>
+					<option value="costToRent">costToRent</option> <!-- list de couts -->
+					<option value="rentToCost">rentToCost</option> <!-- list de loyers -->
+					<option value="grossProfitabilityToCost">grossProfitabilityToCost</option> <!-- list de rentabilités -->
+				</select>
 			</div>
-			<div class="input">
+			<div class="input costDetail">
 				<label for="price">price</label>
-				<input id ="price" type="text" placeholder="eg. : 120000" value="50000">
+				<input id ="price" type="text" placeholder="eg. : 120000">
 			</div>
-			<div class="input">
+			<div class="input costDetail">
 				<label for="works">works</label>
-				<input id ="works" type="text" placeholder="eg. : 5000" value="3000">
+				<input id ="works" type="text" placeholder="eg. : 5000">
 			</div>
-			<div class="input">
+			<div class="input costDetail">
 				<label for="notary">notary</label>
-				<input id ="notary" type="text" placeholder="eg. : 7000" value="10000">
+				<input id ="notary" type="text" placeholder="eg. : 7000">
 			</div>
 			<div class="input">
 				<label for="cost">cost</label>
-				<input id ="cost" type="text" placeholder="eg. : 132000">
+				<input id ="cost" type="text" placeholder="eg. : 132000" value="50000">
 			</div>
 			<div class="input">
 				<label for="rent">rent</label>
@@ -37,7 +43,10 @@
 				<label for="profitability">minimal gross profitability</label>
 				<input id ="profitability" type="text" placeholder="eg. : 0.10" value="0.07">
 			</div>
-			<button>Go</button>
+			<div class="buttonBox">
+				<button id="addGrid">Add grid</button>
+				<button id="clear">Clear</button>
+			</div>
 			<div class="grid"></div>
 		</div>
 		<script type="text/javascript" src="script.js"></script>
