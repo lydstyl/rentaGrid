@@ -14,7 +14,8 @@
 				<label for="whatDoYouWant">whatDoYouWant</label>
 				<!-- <input id ="whatDoYouWant" type="text" placeholder="eg. : costToRent" value="costToRent"> -->
 				<select>
-					<option value="costToRent">costToRent</option> <!-- list de couts -->
+					<option value="choose here !">choose here !</option> <!-- list de couts -->
+					<option value="costToRent" selected>costToRent</op selectedtion> <!-- list de couts -->
 					<option value="rentToCost">rentToCost</option> <!-- list de loyers -->
 					<option value="grossProfitabilityToCost">grossProfitabilityToCost</option> <!-- list de rentabilités -->
 				</select>
@@ -29,7 +30,7 @@
 			</div>
 			<div class="input costDetail">
 				<label for="notary">notary</label>
-				<input id ="notary" type="text" placeholder="eg. : 7000">
+				<input id ="notary" type="text" placeholder="eg. : 7000"> <!-- http://www.pap.fr/argent/calculettes/frais-de-notaire environ 8% -->
 			</div>
 			<div class="input">
 				<label for="cost">cost</label>
@@ -40,7 +41,11 @@
 				<input id="rent" type="text" placeholder="eg. : 13200" value="6000">
 			</div>
 			<div class="input">
-				<label for="profitability">minimal gross profitability</label>
+				<label for="monthRent">monthRent</label>
+				<input id="monthRent" type="text" placeholder="Month rent eg. : 500" value="">
+			</div>
+			<div class="input">
+				<label for="profitability">profitability</label>
 				<input id ="profitability" type="text" placeholder="eg. : 0.10" value="0.07">
 			</div>
 			<div class="buttonBox">
